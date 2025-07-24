@@ -5,18 +5,20 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class AJaggedSwaps {
-    public static void main(String[] args) throws IOException {
+public class AGoalsofVictory {
+    public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int t = Integer.parseInt(br.readLine());
         
         while(t-- > 0){
             int n = Integer.parseInt(br.readLine());
+            int sum = 0;
             StringTokenizer st = new StringTokenizer(br.readLine());
-            int ai = Integer.parseInt(st.nextToken());
+            for(int i =0;i < n-1;i++){
+                sum += Integer.parseInt(st.nextToken());
+            } 
 
-            if(ai != 1) System.out.println("NO");
-            else System.out.println("YES");
+            System.out.println(-sum);
         }
     }
 }
