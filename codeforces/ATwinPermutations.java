@@ -17,6 +17,7 @@ public class ATwinPermutations {
             StringTokenizer st = new StringTokenizer(br.readLine());
             for(int i =0;i < n;i++){
                 int el = Integer.parseInt(st.nextToken());
+                
                 arr[i] = n - el +1;
             }
 
