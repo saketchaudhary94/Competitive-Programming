@@ -1,3 +1,4 @@
+package CP.codeforces;
 import java.util.Scanner;
 
 public class AExcitingBets {
